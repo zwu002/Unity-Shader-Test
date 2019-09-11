@@ -67,15 +67,15 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 80
-    - _RadiusWidth: 10
+    - _Radius: 20
+    - _RadiusWidth: 5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Center: {r: -0.7, g: 0, b: -2.07, a: 0}
+    - _Center: {r: -12, g: 5.8, b: 2.1512356, a: 0}
     - _Color: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RadiusColor: {r: 1, g: 0, b: 0, a: 1}
