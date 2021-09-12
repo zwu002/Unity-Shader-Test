@@ -26,6 +26,7 @@ Shader "FragmentShaders/Grab"
 
             struct vertOutput
             {
+
                 float4 vertex : POSITION;
                 float4 uvgrab : TEXCOORD1;
             };
