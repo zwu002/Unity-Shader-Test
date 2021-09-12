@@ -15,7 +15,7 @@ Shader "FragmentShaders/Window"
               "IgnoreProjector" = "True"
               "RenderType" = "Opaque"}
 
-        GrabPass { "WindowTexture" }
+        GrabPass { }
 
         Pass
         {
