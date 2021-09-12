@@ -4,6 +4,7 @@
     {
 		_MainTex ("Albedo", 2D) = "white" {}
 		_NormalTex ("Normal Map", 2D) = "bump" {}
+        _BlendTex ("Blend Texture", 2D) = "white" {}
     }
 
     SubShader
@@ -16,6 +17,7 @@
 
 		sampler2D _NormalTex;
 		sampler2D _MainTex;
+        sampler2D _BlendTex;
 
         struct Input
         {
@@ -34,6 +36,10 @@
         void surf (Input IN, inout SurfaceOutput o)
         {
 			fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+            fixed4 blendTex = tex2D (_BlendTex, IN.uv_MainTex);
+
+            c = lerp(c, blendTex, blendTex.r);
+
             o.Albedo = c.rgb;
             o.Alpha = c.a;
             o.Normal = UnpackNormal(tex2D(_NormalTex, IN.uv_MainTex));
