@@ -613,6 +613,7 @@ GameObject:
   - component: {fileID: 1931158693}
   - component: {fileID: 1931158694}
   - component: {fileID: 1931158695}
+  - component: {fileID: 1931158696}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -751,7 +752,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931158687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ed09cf31d96e174095666c2920a0707, type: 3}
   m_Name: 
@@ -767,3 +768,27 @@ MonoBehaviour:
   dustTexture: {fileID: 2800000, guid: b946adeb158ccb6439b625e90d4ce7bc, type: 3}
   dustXSpeed: 10
   dustYSpeed: 10
+--- !u!114 &1931158696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931158687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873e86cc72ce8a2408e5262b2eecc782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: cf4928863c587ed498ea45df756fe2f3, type: 3}
+  contrast: 1.5
+  brightness: 0.1
+  nightVisionColor: {r: 0.050980393, g: 0.43137255, b: 0, a: 1}
+  vignetteTexture: {fileID: 2800000, guid: 9e0142411a70fc14493d5f9d511c423d, type: 3}
+  scanLineTexture: {fileID: 2800000, guid: 5a0d4fb2cb349e04f8ee2c3791bc53a1, type: 3}
+  scanLineTileAmount: 4
+  nightVisionNoise: {fileID: 2800000, guid: 19c5b5a398ec2a2459abb66c63aa7a15, type: 3}
+  noiseXSpeed: 100
+  noiseYSpeed: 100
+  distortion: 0.2
+  scale: 0.8
