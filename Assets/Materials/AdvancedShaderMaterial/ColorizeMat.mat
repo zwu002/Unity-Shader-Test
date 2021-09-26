@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DesaturateMat
-  m_Shader: {fileID: 4800000, guid: 2e820ea44fb09324fb3fc9e2517723ac, type: 3}
+  m_Name: ColorizeMat
+  m_Shader: {fileID: 4800000, guid: 0dc507614c9570542a43f7da79baddea, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -62,7 +62,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
-    - _DesatValue: 0.5
+    - _DesatValue: 0.378
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -82,4 +82,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainTint: {r: 0, g: 1, b: 0, a: 1}
+    - _MyColor: {r: 1, g: 0.15723264, b: 0.15723264, a: 1}
   m_BuildTextureStacks: []
